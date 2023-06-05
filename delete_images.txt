@@ -1,0 +1,6 @@
+docker image ls
+# イメージ一覧が取得できる
+
+docker image rm httpd
+
+docker image ls

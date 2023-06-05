@@ -1,0 +1,16 @@
+docker run --name nginx000ex6 -d -p 8084:80 nginx
+
+docker ps -a
+# ブラウザでhttp://localhost:8084にアクセスする
+
+docker stop nginx000ex6
+
+docker ps -a
+# Statusが"Up" --> "Exited"に変わっていることが確認できる
+
+docker rm nginx000ex6
+docker ps -a
+# コンテナが消えている事が確認できる
+
+
+

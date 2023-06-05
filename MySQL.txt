@@ -1,0 +1,15 @@
+docker run --name mysql000ex7 -dit -e MYSQL_ROOT_PASSWORD=myrootpass mysql
+
+--name mysql000ex7 : mysql000ex7 という名前のコンテナを作成する
+-dit : バックグラウンドで実行する・キーボードで操作する
+-e MYSQL_ROOT_PASSWORD= : MySQLのルートパスワードを設定する
+mysql : MySQLのイメージ名。バージョン番号を指定しないので、最新版が使用される。
+
+# MYSQL_ROOT_PASSWORDのスペルをミスったためにコンテナが起動直後に停止してしまった。
+# 正しく入力することで、正常に起動できるようになった。
+
+ps docker -a
+
+docker stop mysql000ex7
+
+docker rm mysql000ex7

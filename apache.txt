@@ -1,0 +1,11 @@
+command: docker run --name apa000ex2 -d -p 8080:80 httpd
+--name apa000ex2 : 作成するコンテナの名前
+-d : バックグラウンドで実行する
+-p 8080:80 : ポートを8080:80で設定する
+httpd : Apacheのイメージ名。バージョン番号を指定しないので、最新版(latest)が使用される
+
+WLS2上で実行したApacheイメージでもWindows側のFirefoxで以下のアドレスにアクセスできる
+
+http://localhost:8080/
+--> ブラウザ上に"It works!"の文字が表示される
+

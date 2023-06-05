@@ -1,0 +1,24 @@
+docker run --name apa000ex3 -d -p 8081:80 httpd
+docker run --name apa000ex4 -d -p 8082:80 httpd
+docker run --name apa000ex5 -d -p 8083:80 httpd
+
+# すでhttpdはダウンロードしているので、docker rmをしても
+# 再度ダウンロードが始まるわけではない。
+
+http://localhost:8081
+http://localhost:8082
+http://localhost:8083
+にWindows上のブラウザからアクセスする
+
+docker stop apa000ex3
+docker stop apa000ex4
+docker stop apa000ex5
+
+docker ps -a # この段階ではまだコンテナは残っている。
+
+docker rm apa000ex3
+docker rm apa000ex4
+docker rm apa000ex5
+
+docker ps -a # コンテナを削除
+

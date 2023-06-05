@@ -1,0 +1,60 @@
+WordPress コンテナ + MySQLコンテナで環境を構築する。
+MySQLはコンテナではなく、ローカルにインストールされているものを使う
+事も可能だが、ここでは複数のコンテナを組み合わせる練習をする。
+
+2つのコンテナはネットワーク的に接続している必要がある。
+--> docker network createコマンドを使う
+
+docker network create <netowrk_name>
+docker network rm     <netowrk_name>
+connect, disconnect, create, inspect, ls, prune, rm
+
+docker run \
+	--name <コンテナ名> \
+	-dit \
+	--net=<ネットワーク名> \
+	-e MYSQL_ROOT_PASSWORD=<MySQLのルートパスワード> \
+	-e MYSQL_DATABASE=<データベース領域> \
+	-e MYSQL_USER=<MySQLのユーザー名> \
+	-e MYSQL_PASSWORD=<MySQLのパスワード> \
+	mysql \
+	--character-set-server=<文字コード> \
+	--collation-server=<照合順序> \
+	--default-authentication-plugin=<認証方式>
+
+docker run \
+	--name mysql000ex11
+	-dit \
+	--net=wordpress000net1 \
+	-e MYSQL_ROOT_PASSWORD=myrootpass \
+	-e MYSQL_DATABASE=wordpress000db \
+	-e MYSQL_USER=wordpress000kun \
+	-e MYSQL_PASSWORD=wkunpass \
+	mysql \
+	--character-set-server=utf8mb4 \
+	--collation-server=utf8mb4_unicode_ci \
+	--default-authentication-plugin=mysql_native_password
+
+
+	docker run \
+	--net wordpress000net1 \
+	--name wordpress000ex12 \
+	-dit \
+	-p 8085:80 \
+	-e WORDPRESS_DB_HOST=mysql000ex11 \
+	-e WORDPRESS_DB_NAME=wordpress000db \
+	-e WORDPRESS_DB_USER=wordpress000kun \
+	-e WORDPRESS_DB_PASSWORD=wkunpass
+	wordpress
+
+MySQLのコンテナを先に作ること
+
+docker network create wordpress000net1
+
+docker run --name mysql000ex11 -dit --net=wordpress000net1 -e MYSQL_ROOT_PASSWORD=myrootpass -e MYSQL_DATABASE=wordpress000db -e MYSQL_USER=wordpress000kun -e MYSQL_PASSWORD=wkunpass mysql --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci --default-authentication-plugin=mysql_native_password
+
+docker run --name wordpress000ex12 -dit --net=wordpress000net1 -p 8085:80 -e WORDPRESS_DB_HOST=mysql000ex11 -e WORDPRESS_DB_NAME=wordpress000db -e WORDPRESS_DB_USER=wordpress000kun -e WORDPRESS_DB_PASSWORD=wkunpass wordpress
+
+docker ps -a
+
+

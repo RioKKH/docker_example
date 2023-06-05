@@ -1,0 +1,10 @@
+docker run --name apa000ex19 -d -p 8089:80 httpd
+
+# ここでブラウザをみても、まだindex.htmlをコピーしていないので、
+# it works!しか表示されない
+
+docker cp /home/rio/work/git/docker_example/index.html apa000ex19:/usr/local/apache2/htdocs/
+
+# ここでブラウザをリロードすると表示が変わっている
+
+# stopしてrm
