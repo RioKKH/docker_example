@@ -8,3 +8,6 @@ docker cp /home/rio/work/git/docker_example/index.html apa000ex19:/usr/local/apa
 # ここでブラウザをリロードすると表示が変わっている
 
 # stopしてrm
+# 再度run
+# そしてブラウザでリロード
+# 表示されるのはit works!となるので、index.htmlは/usr/local/apache2/htdocsからは削除されている
