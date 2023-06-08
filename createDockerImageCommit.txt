@@ -1,0 +1,11 @@
+# Apaceコンテナを作成する
+docker run --name apa000ex22 -d -p 8092:80 httpd
+
+# コンテナをイメージに書きだす
+docker commit apa000ex22 ex22_original1
+
+# イメージが作成されたことを確認する
+docker image ls
+
+# 不要なイメージは削除する
+docker image rm ex22_original1

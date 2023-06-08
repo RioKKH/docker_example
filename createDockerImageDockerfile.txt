@@ -1,0 +1,5 @@
+# apa_folderを作成する
+mkdir apa_folder
+
+# buildコマンドを実行してイメージを作成する
+docker build -t ex22_original2 /home/rio/apa_folder/

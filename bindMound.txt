@@ -1,0 +1,2 @@
+# "run"コマンドでApacheコンテナを起動する
+docker run --name apa000ex20 -d -p 8090:80 -v /home/user/apa_folder:/usr/local/apache2/htdocs httpd
