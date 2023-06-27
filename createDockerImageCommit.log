@@ -1,0 +1,94 @@
+rio@ThinkPadP14s:~/work/git/docker_example$ script -f createDockerImage.txt
+Script started, output log file is 'createDockerImage.txt'.
+rio@ThinkPadP14s:~/work/git/docker_example$
+rio@ThinkPadP14s:~/work/git/docker_example$
+rio@ThinkPadP14s:~/work/git/docker_example$
+rio@ThinkPadP14s:~/work/git/docker_example$ docker run --name apa000ex22 -d -p 8092:80 httpd
+65fa7225bc70afe0c80c7bb224a8ee1d71e3e4fb4d68a8b0c16f0481905812dc
+rio@ThinkPadP14s:~/work/git/docker_example$
+rio@ThinkPadP14s:~/work/git/docker_example$
+rio@ThinkPadP14s:~/work/git/docker_example$ docker ps -a
+CONTAINER ID   IMAGE     COMMAND              CREATED         STATUS         PORTS                                   NAMES
+65fa7225bc70   httpd     "httpd-foreground"   7 seconds ago   Up 6 seconds   0.0.0.0:8092->80/tcp, :::8092->80/tcp   apa000ex22
+6b365b01eb4e   httpd     "httpd-foreground"   2 days ago      Up 2 days      0.0.0.0:8089->80/tcp, :::8089->80/tcp   apa000ex19
+rio@ThinkPadP14s:~/work/git/docker_example$
+rio@ThinkPadP14s:~/work/git/docker_example$
+rio@ThinkPadP14s:~/work/git/docker_example$ docker rm apa000ex19
+Error response from daemon: You cannot remove a running container 6b365b01eb4eae0926dee2c6f9df808a96e0e9c041661d9b41b558a2a4cfb0f9. Stop the container before attempting removal or force remove
+rio@ThinkPadP14s:~/work/git/docker_example$
+rio@ThinkPadP14s:~/work/git/docker_example$
+rio@ThinkPadP14s:~/work/git/docker_example$ docker ps -a
+CONTAINER ID   IMAGE     COMMAND              CREATED          STATUS          PORTS                                   NAMES
+65fa7225bc70   httpd     "httpd-foreground"   28 seconds ago   Up 27 seconds   0.0.0.0:8092->80/tcp, :::8092->80/tcp   apa000ex22
+6b365b01eb4e   httpd     "httpd-foreground"   2 days ago       Up 2 days       0.0.0.0:8089->80/tcp, :::8089->80/tcp   apa000ex19
+rio@ThinkPadP14s:~/work/git/docker_example$ docker stop apa000ex19
+apa000ex19
+rio@ThinkPadP14s:~/work/git/docker_example$ docker ps -a
+CONTAINER ID   IMAGE     COMMAND              CREATED          STATUS                     PORTS                                   NAMES
+65fa7225bc70   httpd     "httpd-foreground"   39 seconds ago   Up 38 seconds              0.0.0.0:8092->80/tcp, :::8092->80/tcp   apa000ex22
+6b365b01eb4e   httpd     "httpd-foreground"   2 days ago       Exited (0) 2 seconds ago                                           apa000ex19
+rio@ThinkPadP14s:~/work/git/docker_example$
+rio@ThinkPadP14s:~/work/git/docker_example$
+rio@ThinkPadP14s:~/work/git/docker_example$ docker rm apa000ex19
+apa000ex19
+rio@ThinkPadP14s:~/work/git/docker_example$
+rio@ThinkPadP14s:~/work/git/docker_example$
+rio@ThinkPadP14s:~/work/git/docker_example$ docker ps -a
+CONTAINER ID   IMAGE     COMMAND              CREATED          STATUS          PORTS                                   NAMES
+65fa7225bc70   httpd     "httpd-foreground"   44 seconds ago   Up 43 seconds   0.0.0.0:8092->80/tcp, :::8092->80/tcp   apa000ex22
+rio@ThinkPadP14s:~/work/git/docker_example$
+rio@ThinkPadP14s:~/work/git/docker_example$
+rio@ThinkPadP14s:~/work/git/docker_example$ docker commit apa000ex22 ex22_original1
+sha256:bb2a56f3c74b6331ec468a31a5cb49a9056f24ba3d7727a50aaa1796135b65e1
+rio@ThinkPadP14s:~/work/git/docker_example$
+rio@ThinkPadP14s:~/work/git/docker_example$
+rio@ThinkPadP14s:~/work/git/docker_example$ docker ps -a
+CONTAINER ID   IMAGE     COMMAND              CREATED         STATUS         PORTS                                   NAMES
+65fa7225bc70   httpd     "httpd-foreground"   2 minutes ago   Up 2 minutes   0.0.0.0:8092->80/tcp, :::8092->80/tcp   apa000ex22
+rio@ThinkPadP14s:~/work/git/docker_example$
+rio@ThinkPadP14s:~/work/git/docker_example$
+rio@ThinkPadP14s:~/work/git/docker_example$ docker image ls
+REPOSITORY       TAG       IMAGE ID       CREATED          SIZE
+ex22_original1   latest    bb2a56f3c74b   11 seconds ago   145MB
+nginx            latest    f9c14fe76d50   13 days ago      143MB
+httpd            latest    d1676199e605   2 weeks ago      145MB
+hello-world      latest    9c7a54a9a43c   4 weeks ago      13.3kB
+rio@ThinkPadP14s:~/work/git/docker_example$
+rio@ThinkPadP14s:~/work/git/docker_example$
+rio@ThinkPadP14s:~/work/git/docker_example$ docker image rm nginx:latest
+Untagged: nginx:latest
+Untagged: nginx@sha256:af296b188c7b7df99ba960ca614439c99cb7cf252ed7bbc23e90cfda59092305
+Deleted: sha256:f9c14fe76d502861ba0939bc3189e642c02e257f06f4c0214b1f8ca329326cda
+Deleted: sha256:419f8948c50c723f2a5ac74428af3d804b5d0079d6df8f7f827663cf10cbc366
+Deleted: sha256:1030aac4f1a8096ed58d3d4a2df55dd1b1b27d919ad156d97ad1f68081d0051a
+Deleted: sha256:7d90b49d96c3036539ef144ecc27c01de03902d8ea166a0f7b77d11d3779c4bd
+Deleted: sha256:551acb210764654af31b6cd51adaa74edc9a202587c3395fe0e9f95a2e097f8b
+Deleted: sha256:3c530958db4c75c6fb409f339367aaf9a1e163c84718c035d4b09bebc83f43e7
+rio@ThinkPadP14s:~/work/git/docker_example$
+rio@ThinkPadP14s:~/work/git/docker_example$
+rio@ThinkPadP14s:~/work/git/docker_example$
+rio@ThinkPadP14s:~/work/git/docker_example$ docker image ls
+REPOSITORY       TAG       IMAGE ID       CREATED              SIZE
+ex22_original1   latest    bb2a56f3c74b   About a minute ago   145MB
+httpd            latest    d1676199e605   2 weeks ago          145MB
+hello-world      latest    9c7a54a9a43c   4 weeks ago          13.3kB
+rio@ThinkPadP14s:~/work/git/docker_example$
+rio@ThinkPadP14s:~/work/git/docker_example$
+rio@ThinkPadP14s:~/work/git/docker_example$ docker image rm ex22_original1:latest
+Untagged: ex22_original1:latest
+Deleted: sha256:bb2a56f3c74b6331ec468a31a5cb49a9056f24ba3d7727a50aaa1796135b65e1
+Deleted: sha256:40210de844f2163241c6aea30ac578a834453763e2a10a6ecf85ad9ed17983ae
+rio@ThinkPadP14s:~/work/git/docker_example$
+rio@ThinkPadP14s:~/work/git/docker_example$
+rio@ThinkPadP14s:~/work/git/docker_example$ docker image ls
+REPOSITORY    TAG       IMAGE ID       CREATED       SIZE
+httpd         latest    d1676199e605   2 weeks ago   145MB
+hello-world   latest    9c7a54a9a43c   4 weeks ago   13.3kB
+rio@ThinkPadP14s:~/work/git/docker_example$
+rio@ThinkPadP14s:~/work/git/docker_example$
+rio@ThinkPadP14s:~/work/git/docker_example$
+rio@ThinkPadP14s:~/work/git/docker_example$
+rio@ThinkPadP14s:~/work/git/docker_example$
+rio@ThinkPadP14s:~/work/git/docker_example$ exit
+exit
+Script done.

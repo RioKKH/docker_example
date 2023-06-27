@@ -1,0 +1,45 @@
+rio@ThinkPadP14s:~/work/git/docker_example$ docker run --name nginx000ex6 -d -p 8084:80 nginx
+Unable to find image 'nginx:latest' locally
+latest: Pulling from library/nginx
+f03b40093957: Already exists
+eed12bbd6494: Pull complete
+fa7eb8c8eee8: Pull complete
+7ff3b2b12318: Pull complete
+0f67c7de5f2c: Pull complete
+831f51541d38: Pull complete
+Digest: sha256:af296b188c7b7df99ba960ca614439c99cb7cf252ed7bbc23e90cfda59092305
+Status: Downloaded newer image for nginx:latest
+398ca344f028a7b92ce830ca74c167cc0a62b5eadcbd731fec5f591ff26ab265
+Script started on 2023-06-05 15:48:53+09:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="154" LINES="32"]
+[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ ps -e[Ka [K[K[K[K[K[Kdocker ps -a
+[?2004lCONTAINER ID   IMAGE     COMMAND                   CREATED          STATUS          PORTS                                   NAMES
+398ca344f028   nginx     "/docker-entrypoint.…"   53 seconds ago   Up 52 seconds   0.0.0.0:8084->80/tcp, :::8084->80/tcp   nginx000ex6
+[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ dockc[Ker stop ntgin[K[K[K[Kginx000ex6 
+[?2004lnginx000ex6
+[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ docker ps -a
+[?2004lCONTAINER ID   IMAGE     COMMAND                   CREATED         STATUS                      PORTS     NAMES
+398ca344f028   nginx     "/docker-entrypoint.…"   2 minutes ago   Exited (0) 24 seconds ago             nginx000ex6
+[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ docker rm nginx000ex6 
+[?2004lnginx000ex6
+[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ docker rm nginx000ex6 [10Pps -a
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ exit
+[?2004lexit
+
+Script done on 2023-06-05 15:53:04+09:00 [COMMAND_EXIT_CODE="0"]

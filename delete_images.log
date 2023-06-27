@@ -1,0 +1,34 @@
+Script started on 2023-06-05 16:06:23+09:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="154" LINES="32"]
+[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ dok[Kcker image ls
+[?2004lREPOSITORY    TAG       IMAGE ID       CREATED        SIZE
+mysql         latest    c71276df4a87   12 hours ago   565MB
+nginx         latest    f9c14fe76d50   11 days ago    143MB
+httpd         latest    d1676199e605   12 days ago    145MB
+hello-world   latest    9c7a54a9a43c   4 weeks ago    13.3kB
+[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ docker image rm https[Kd
+[?2004lUntagged: httpd:latest
+Untagged: httpd@sha256:1bb3f7669a85713906e695599d29c58ab40d4e6409907946609d92a428e95b49
+Deleted: sha256:d1676199e60591c70e38ddfde2c6c3fc51452fafeeeab485f6713d715dacee3a
+Deleted: sha256:0f029a74a17277810a0be7e26c254a4a9add89b53fab4108ea0180635bb9881b
+Deleted: sha256:7905f489d9fab07f89e9aed2c4a8e812f55f211116224e15b38cff6160d496e1
+Deleted: sha256:832e0eb9bc00791648c2a6c0dc887bb9d7638750f5e9e847c5dd82a437372b54
+Deleted: sha256:ebad0c0eb6a40477a547bc116fbf660bb6e54e508521e0b598e87ad38cd7f90b
+[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ docker image rm httpdls[K
+[?2004lREPOSITORY    TAG       IMAGE ID       CREATED        SIZE
+mysql         latest    c71276df4a87   12 hours ago   565MB
+nginx         latest    f9c14fe76d50   11 days ago    143MB
+hello-world   latest    9c7a54a9a43c   4 weeks ago    13.3kB
+[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ exit
+[?2004lexit
+
+Script done on 2023-06-05 16:49:51+09:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,292 @@
+Script started on 2023-06-05 15:57:59+09:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="154" LINES="32"]
+[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ docker run --name mysql000ex7 -dit -e MYSQL_ROOT_PASSOWRD=myrootpass mysql
+[?2004lUnable to find image 'mysql:latest' locally
+latest: Pulling from library/mysql
+
+[1A[2K3e0c3751e648: Pulling fs layer [1B
+[1A[2K7914193c6f0e: Pulling fs layer [1B
+[1A[2Kfe4b3f820487: Pulling fs layer [1B
+[1A[2K63683b304e3d: Pulling fs layer [1B
+[1A[2K6ad9069836bd: Pulling fs layer [1B
+[1A[2Kde90cd4c0e5d: Pulling fs layer [1B
+[1A[2K892e565e2cf0: Pulling fs layer [1B
+[1A[2K73057d123da0: Pulling fs layer [1B
+[1A[2Kaf1a3c0ec34e: Pulling fs layer [1B
+[1A[2K62fe8dc4ffe9: Pulling fs layer [1B
+[1A[2K8807488ae889: Pulling fs layer [1B[6A[2Kde90cd4c0e5d: Waiting [6B[7A[2K6ad9069836bd: Waiting [7B[5A[2K892e565e2cf0: Waiting [5B[4A[2K73057d123da0: Waiting [4B[3A[2Kaf1a3c0ec34e: Waiting [3B[2A[2K62fe8dc4ffe9: Waiting [2B[1A[2K8807488ae889: Waiting [1B[8A[2K63683b304e3d: Waiting [8B[10A[2K7914193c6f0e: Downloading [========================================>          ]     722B/885B[10B[10A[2K7914193c6f0e: Downloading [==================================================>]     885B/885B[10B[10A[2K7914193c6f0e: Verifying Checksum [10B[10A[2K7914193c6f0e: Download complete [10B[9A[2Kfe4b3f820487: Downloading [>                                                  ]  10.95kB/982.8kB[9B[11A[2K3e0c3751e648: Downloading [>                                                  ]    458kB/44.87MB[11B[9A[2Kfe4b3f820487: Downloading [======================================>            ]    757kB/982.8kB[9B[9A[2Kfe4b3f820487: Downloading [==================================================>]  982.8kB/982.8kB[9B[9A[2Kfe4b3f820487: Verifying Checksum [9B[9A[2Kfe4b3f820487: Download complete [9B[11A[2K3e0c3751e648: Downloading [==>                                                ]  1.829MB/44.87MB[11B[11A[2K3e0c3751e648: Downloading [===>                                               ]  2.747MB/44.87MB[11B[11A[2K3e0c3751e648: Downloading [====>                                              ]  3.664MB/44.87MB[11B[11A[2K3e0c3751e648: Downloading [=====>                                             ]  4.586MB/44.87MB[11B[8A[2K63683b304e3d: Downloading [>                                                  ]  46.46kB/4.614MB[8B[11A[2K3e0c3751e648: Downloading [======>                                            ]  5.495MB/44.87MB[11B[8A[2K63683b304e3d: Downloading [=====>                                             ]  491.5kB/4.614MB[8B[8A[2K63683b304e3d: Downloading [===========>                                       ]  1.032MB/4.614MB[8B[7A[2K6ad9069836bd: Downloading [=============>                                     ]     721B/2.631kB[7B[11A[2K3e0c3751e648: Downloading [=======>                                           ]  6.417MB/44.87MB[11B[7A[2K6ad9069836bd: Downloading [==================================================>]  2.631kB/2.631kB[7B[7A[2K6ad9069836bd: Download complete [7B[8A[2K63683b304e3d: Downloading [==================>                                ]  1.671MB/4.614MB[8B[11A[2K3e0c3751e648: Downloading [========>                                          ]  7.334MB/44.87MB[11B[8A[2K63683b304e3d: Downloading [==========================>                        ]   2.46MB/4.614MB[8B[11A[2K3e0c3751e648: Downloading [=========>                                         ]  8.252MB/44.87MB[11B[8A[2K63683b304e3d: Downloading [====================================>              ]  3.406MB/4.614MB[8B[11A[2K3e0c3751e648: Downloading [==========>                                        ]  9.628MB/44.87MB[11B[8A[2K63683b304e3d: Downloading [=================================================> ]  4.553MB/4.614MB[8B[8A[2K63683b304e3d: Verifying Checksum [8B[8A[2K63683b304e3d: Download complete [8B[11A[2K3e0c3751e648: Downloading [============>                                      ]  11.46MB/44.87MB[11B[11A[2K3e0c3751e648: Downloading [===============>                                   ]  13.75MB/44.87MB[11B[11A[2K3e0c3751e648: Downloading [=================>                                 ]  16.05MB/44.87MB[11B[6A[2Kde90cd4c0e5d: Downloading [==================================================>]     335B/335B[6B[6A[2Kde90cd4c0e5d: Verifying Checksum [6B[6A[2Kde90cd4c0e5d: Download complete [6B[11A[2K3e0c3751e648: Downloading [====================>                              ]  18.79MB/44.87MB[11B[11A[2K3e0c3751e648: Downloading [=======================>                           ]  21.53MB/44.87MB[11B[11A[2K3e0c3751e648: Downloading [===========================>                       ]  24.28MB/44.87MB[11B[11A[2K3e0c3751e648: Downloading [==============================>                    ]  27.03MB/44.87MB[11B[5A[2K892e565e2cf0: Downloading [>                                                  ]  527.6kB/58.61MB[5B[11A[2K3e0c3751e648: Downloading [===================================>               ]  31.61MB/44.87MB[11B[5A[2K892e565e2cf0: Downloading [>                                                  ]  1.068MB/58.61MB[5B[11A[2K3e0c3751e648: Downloading [=====================================>             ]  33.89MB/44.87MB[11B[11A[2K3e0c3751e648: Downloading [========================================>          ]  36.18MB/44.87MB[11B[5A[2K892e565e2cf0: Downloading [=>                                                 ]  1.608MB/58.61MB[5B[11A[2K3e0c3751e648: Downloading [==========================================>        ]  38.02MB/44.87MB[11B[5A[2K892e565e2cf0: Downloading [=>                                                 ]  2.149MB/58.61MB[5B[11A[2K3e0c3751e648: Downloading [============================================>      ]   40.3MB/44.87MB[11B[5A[2K892e565e2cf0: Downloading [==>                                                ]   3.23MB/58.61MB[5B[11A[2K3e0c3751e648: Downloading [===============================================>   ]  43.05MB/44.87MB[11B[11A[2K3e0c3751e648: Verifying Checksum [11B[11A[2K3e0c3751e648: Download complete [11B[5A[2K892e565e2cf0: Downloading [===>                                               ]  4.307MB/58.61MB[5B[11A[2K3e0c3751e648: Extracting [>                                                  ]  458.8kB/44.87MB[11B[4A[2K73057d123da0: Downloading [==================================================>]     316B/316B[4B[4A[2K73057d123da0: Verifying Checksum [4B[4A[2K73057d123da0: Download complete [4B[11A[2K3e0c3751e648: Extracting [======>                                            ]  5.964MB/44.87MB[11B[5A[2K892e565e2cf0: Downloading [====>                                              ]   5.38MB/58.61MB[5B[11A[2K3e0c3751e648: Extracting [=========>                                         ]  8.716MB/44.87MB[11B[5A[2K892e565e2cf0: Downloading [=====>                                             ]  6.994MB/58.61MB[5B[11A[2K3e0c3751e648: Extracting [=============>                                     ]  11.93MB/44.87MB[11B[5A[2K892e565e2cf0: Downloading [=======>                                           ]  9.145MB/58.61MB[5B[11A[2K3e0c3751e648: Extracting [====================>                              ]  18.81MB/44.87MB[11B[5A[2K892e565e2cf0: Downloading [=========>                                         ]   11.3MB/58.61MB[5B[11A[2K3e0c3751e648: Extracting [============================>                      ]  25.69MB/44.87MB[11B[5A[2K892e565e2cf0: Downloading [===========>                                       ]  13.95MB/58.61MB[5B[11A[2K3e0c3751e648: Extracting [====================================>              ]  32.57MB/44.87MB[11B[5A[2K892e565e2cf0: Downloading [==============>                                    ]  16.63MB/58.61MB[5B[11A[2K3e0c3751e648: Extracting [=======================================>           ]  35.32MB/44.87MB[11B[3A[2Kaf1a3c0ec34e: Downloading [>                                                  ]  540.7kB/56.57MB[3B[5A[2K892e565e2cf0: Downloading [================>                                  ]  19.31MB/58.61MB[5B[2A[2K62fe8dc4ffe9: Downloading [======>                                            ]     709B/5.391kB[2B[2A[2K62fe8dc4ffe9: Downloading [==================================================>]  5.391kB/5.391kB[2B[2A[2K62fe8dc4ffe9: Verifying Checksum [2B[2A[2K62fe8dc4ffe9: Download complete [2B[11A[2K3e0c3751e648: Extracting [=============================================>     ]  40.83MB/44.87MB[11B[5A[2K892e565e2cf0: Downloading [==================>                                ]  22.01MB/58.61MB[5B[3A[2Kaf1a3c0ec34e: Downloading [>                                                  ]  1.081MB/56.57MB[3B[5A[2K892e565e2cf0: Downloading [=====================>                             ]  24.71MB/58.61MB[5B[11A[2K3e0c3751e648: Extracting [================================================>  ]  43.12MB/44.87MB[11B[5A[2K892e565e2cf0: Downloading [=======================>                           ]  27.39MB/58.61MB[5B[3A[2Kaf1a3c0ec34e: Downloading [=>                                                 ]  2.163MB/56.57MB[3B[5A[2K892e565e2cf0: Downloading [==========================>                        ]  30.61MB/58.61MB[5B[3A[2Kaf1a3c0ec34e: Downloading [==>                                                ]  2.703MB/56.57MB[3B[11A[2K3e0c3751e648: Extracting [================================================>  ]  43.58MB/44.87MB[11B[11A[2K3e0c3751e648: Extracting [==================================================>]  44.87MB/44.87MB[11B[5A[2K892e565e2cf0: Downloading [============================>                      ]  33.29MB/58.61MB[5B[11A[2K3e0c3751e648: Pull complete [11B[10A[2K7914193c6f0e: Extracting [==================================================>]     885B/885B[10B[10A[2K7914193c6f0e: Extracting [==================================================>]     885B/885B[10B[10A[2K7914193c6f0e: Pull complete [10B[9A[2Kfe4b3f820487: Extracting [=>                                                 ]  32.77kB/982.8kB[9B[9A[2Kfe4b3f820487: Extracting [==================================================>]  982.8kB/982.8kB[9B[9A[2Kfe4b3f820487: Extracting [==================================================>]  982.8kB/982.8kB[9B[9A[2Kfe4b3f820487: Pull complete [9B[8A[2K63683b304e3d: Extracting [>                                                  ]  65.54kB/4.614MB[8B[5A[2K892e565e2cf0: Downloading [==============================>                    ]  35.96MB/58.61MB[5B[3A[2Kaf1a3c0ec34e: Downloading [===>                                               ]  3.772MB/56.57MB[3B[8A[2K63683b304e3d: Extracting [=============================>                     ]  2.687MB/4.614MB[8B[5A[2K892e565e2cf0: Downloading [=================================>                 ]  39.16MB/58.61MB[5B[8A[2K63683b304e3d: Extracting [==================================================>]  4.614MB/4.614MB[8B[8A[2K63683b304e3d: Pull complete [8B[7A[2K6ad9069836bd: Extracting [==================================================>]  2.631kB/2.631kB[7B[7A[2K6ad9069836bd: Extracting [==================================================>]  2.631kB/2.631kB[7B[7A[2K6ad9069836bd: Pull complete [7B[6A[2Kde90cd4c0e5d: Extracting [==================================================>]     335B/335B[6B[6A[2Kde90cd4c0e5d: Extracting [==================================================>]     335B/335B[6B[6A[2Kde90cd4c0e5d: Pull complete [6B[5A[2K892e565e2cf0: Downloading [===================================>               ]  41.86MB/58.61MB[5B[3A[2Kaf1a3c0ec34e: Downloading [====>                                              ]  4.853MB/56.57MB[3B[5A[2K892e565e2cf0: Downloading [====================================>              ]  42.94MB/58.61MB[5B[3A[2Kaf1a3c0ec34e: Downloading [====>                                              ]  5.394MB/56.57MB[3B[5A[2K892e565e2cf0: Downloading [========================================>          ]  47.26MB/58.61MB[5B[3A[2Kaf1a3c0ec34e: Downloading [=====>                                             ]  6.466MB/56.57MB[3B[5A[2K892e565e2cf0: Downloading [==========================================>        ]  49.95MB/58.61MB[5B[5A[2K892e565e2cf0: Downloading [============================================>      ]  52.63MB/58.61MB[5B[3A[2Kaf1a3c0ec34e: Downloading [======>                                            ]  7.547MB/56.57MB[3B[5A[2K892e565e2cf0: Downloading [===============================================>   ]  55.31MB/58.61MB[5B[5A[2K892e565e2cf0: Downloading [=================================================> ]  58.01MB/58.61MB[5B[5A[2K892e565e2cf0: Verifying Checksum [5B[5A[2K892e565e2cf0: Download complete [5B[3A[2Kaf1a3c0ec34e: Downloading [=======>                                           ]  8.616MB/56.57MB[3B[5A[2K892e565e2cf0: Extracting [>                                                  ]  557.1kB/58.61MB[5B[5A[2K892e565e2cf0: Extracting [=====>                                             ]  6.128MB/58.61MB[5B[3A[2Kaf1a3c0ec34e: Downloading [========>                                          ]  9.698MB/56.57MB[3B[5A[2K892e565e2cf0: Extracting [=========>                                         ]  11.14MB/58.61MB[5B[3A[2Kaf1a3c0ec34e: Downloading [=========>                                         ]  10.24MB/56.57MB[3B[5A[2K892e565e2cf0: Extracting [==============>                                    ]  16.71MB/58.61MB[5B[5A[2K892e565e2cf0: Extracting [==================>                                ]  21.17MB/58.61MB[5B[3A[2Kaf1a3c0ec34e: Downloading [=========>                                         ]  11.31MB/56.57MB[3B[5A[2K892e565e2cf0: Extracting [=====================>                             ]  25.62MB/58.61MB[5B[3A[2Kaf1a3c0ec34e: Downloading [==========>                                        ]  11.85MB/56.57MB[3B[5A[2K892e565e2cf0: Extracting [============================>                      ]  32.87MB/58.61MB[5B[3A[2Kaf1a3c0ec34e: Downloading [===========>                                       ]  12.92MB/56.57MB[3B[1A[2K8807488ae889: Downloading [==================================================>]     121B/121B[1B[1A[2K8807488ae889: Verifying Checksum [1B[1A[2K8807488ae889: Download complete [1B[5A[2K892e565e2cf0: Extracting [=================================>                 ]  39.55MB/58.61MB[5B[3A[2Kaf1a3c0ec34e: Downloading [============>                                      ]     14MB/56.57MB[3B[5A[2K892e565e2cf0: Extracting [=======================================>           ]  46.24MB/58.61MB[5B[5A[2K892e565e2cf0: Extracting [==========================================>        ]  50.14MB/58.61MB[5B[3A[2Kaf1a3c0ec34e: Downloading [=============>                                     ]  15.08MB/56.57MB[3B[5A[2K892e565e2cf0: Extracting [===============================================>   ]  55.15MB/58.61MB[5B[5A[2K892e565e2cf0: Extracting [==================================================>]  58.61MB/58.61MB[5B[5A[2K892e565e2cf0: Pull complete [5B[4A[2K73057d123da0: Extracting [==================================================>]     316B/316B[4B[4A[2K73057d123da0: Extracting [==================================================>]     316B/316B[4B[4A[2K73057d123da0: Pull complete [4B[3A[2Kaf1a3c0ec34e: Downloading [=============>                                     ]  15.62MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Downloading [==============>                                    ]  16.69MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Downloading [===============>                                   ]  17.77MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Downloading [================>                                  ]  18.85MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Downloading [=================>                                 ]  19.93MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Downloading [==================>                                ]  21.01MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Downloading [===================>                               ]  22.09MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Downloading [====================>                              ]  23.17MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Downloading [=====================>                             ]  24.23MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Downloading [======================>                            ]  25.31MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Downloading [=======================>                           ]  26.39MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Downloading [========================>                          ]  27.47MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Downloading [=========================>                         ]  28.55MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Downloading [==========================>                        ]  29.62MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Downloading [===========================>                       ]   30.7MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Downloading [===========================>                       ]  31.24MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Downloading [============================>                      ]  32.31MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Downloading [=============================>                     ]  33.37MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Downloading [==============================>                    ]  34.45MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Downloading [===============================>                   ]  35.53MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Downloading [================================>                  ]  37.15MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Downloading [=================================>                 ]  38.23MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Downloading [==================================>                ]  38.78MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Downloading [===================================>               ]  39.86MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Downloading [====================================>              ]  40.93MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Downloading [=====================================>             ]  42.02MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Downloading [======================================>            ]   43.1MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Downloading [=======================================>           ]  44.17MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Downloading [=======================================>           ]  45.23MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Downloading [========================================>          ]  46.32MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Downloading [==========================================>        ]  47.93MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Downloading [===========================================>       ]  49.54MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Downloading [=============================================>     ]  51.17MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Downloading [===============================================>   ]   53.3MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Downloading [================================================>  ]  54.93MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Verifying Checksum [3B[3A[2Kaf1a3c0ec34e: Download complete [3B[3A[2Kaf1a3c0ec34e: Extracting [>                                                  ]  557.1kB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Extracting [======>                                            ]  7.242MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Extracting [============>                                      ]  13.93MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Extracting [================>                                  ]  18.38MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Extracting [====================>                              ]   23.4MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Extracting [======================>                            ]  25.62MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Extracting [=======================>                           ]  26.18MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Extracting [=======================>                           ]  26.74MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Extracting [========================>                          ]   27.3MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Extracting [========================>                          ]  27.85MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Extracting [=========================>                         ]  28.41MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Extracting [=========================>                         ]  28.97MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Extracting [==========================>                        ]  29.52MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Extracting [==========================>                        ]  30.08MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Extracting [===========================>                       ]  30.64MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Extracting [===========================>                       ]   31.2MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Extracting [============================>                      ]  31.75MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Extracting [============================>                      ]  32.31MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Extracting [=============================>                     ]  32.87MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Extracting [=============================>                     ]  33.42MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Extracting [==============================>                    ]  34.54MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Extracting [================================>                  ]  36.21MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Extracting [================================>                  ]  37.32MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Extracting [==================================>                ]  38.99MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Extracting [=====================================>             ]  42.34MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Extracting [======================================>            ]  44.01MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Extracting [=======================================>           ]  45.12MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Extracting [==========================================>        ]  47.91MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Extracting [===========================================>       ]  49.02MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Extracting [=============================================>     ]  51.81MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Extracting [==================================================>]  56.57MB/56.57MB[3B[3A[2Kaf1a3c0ec34e: Pull complete [3B[2A[2K62fe8dc4ffe9: Extracting [==================================================>]  5.391kB/5.391kB[2B[2A[2K62fe8dc4ffe9: Extracting [==================================================>]  5.391kB/5.391kB[2B[2A[2K62fe8dc4ffe9: Pull complete [2B[1A[2K8807488ae889: Extracting [==================================================>]     121B/121B[1B[1A[2K8807488ae889: Extracting [==================================================>]     121B/121B[1B[1A[2K8807488ae889: Pull complete [1BDigest: sha256:4bae98614cd6ad1aecbdd32ff1b37b93fb0ee22b069469e7bc9679bacef1abd2
+Status: Downloaded newer image for mysql:latest
+3ee978bb05716fa07660dffb0f194e50d8c86b5f382de5d16751baa54c65a760
+[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ docker -s
+[?2004lunknown shorthand flag: 's' in -s
+See 'docker --help'.
+
+Usage:  docker [OPTIONS] COMMAND
+
+A self-sufficient runtime for containers
+
+Common Commands:
+  run         Create and run a new container from an image
+  exec        Execute a command in a running container
+  ps          List containers
+  build       Build an image from a Dockerfile
+  pull        Download an image from a registry
+  push        Upload an image to a registry
+  images      List images
+  login       Log in to a registry
+  logout      Log out from a registry
+  search      Search Docker Hub for images
+  version     Show the Docker version information
+  info        Display system-wide information
+
+Management Commands:
+  builder     Manage builds
+  buildx*     Docker Buildx (Docker Inc., v0.10.5)
+  compose*    Docker Compose (Docker Inc., v2.18.1)
+  container   Manage containers
+  context     Manage contexts
+  image       Manage images
+  manifest    Manage Docker image manifests and manifest lists
+  network     Manage networks
+  plugin      Manage plugins
+  system      Manage Docker
+  trust       Manage trust on Docker images
+  volume      Manage volumes
+
+Swarm Commands:
+  swarm       Manage Swarm
+
+Commands:
+  attach      Attach local standard input, output, and error streams to a running container
+  commit      Create a new image from a container's changes
+  cp          Copy files/folders between a container and the local filesystem
+  create      Create a new container
+  diff        Inspect changes to files or directories on a container's filesystem
+  events      Get real time events from the server
+  export      Export a container's filesystem as a tar archive
+  history     Show the history of an image
+  import      Import the contents from a tarball to create a filesystem image
+  inspect     Return low-level information on Docker objects
+  kill        Kill one or more running containers
+  load        Load an image from a tar archive or STDIN
+  logs        Fetch the logs of a container
+  pause       Pause all processes within one or more containers
+  port        List port mappings or a specific mapping for the container
+  rename      Rename a container
+  restart     Restart one or more containers
+  rm          Remove one or more containers
+  rmi         Remove one or more images
+  save        Save one or more images to a tar archive (streamed to STDOUT by default)
+  start       Start one or more stopped containers
+  stats       Display a live stream of container(s) resource usage statistics
+  stop        Stop one or more running containers
+  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
+  top         Display the running processes of a container
+  unpause     Unpause all processes within one or more containers
+  update      Update configuration of one or more containers
+  wait        Block until one or more containers stop, then print their exit codes
+
+Global Options:
+      --config string      Location of client config files (default "/home/rio/.docker")
+  -c, --context string     Name of the context to use to connect to the daemon (overrides DOCKER_HOST env var and default context set with "docker
+                           context use")
+  -D, --debug              Enable debug mode
+  -H, --host list          Daemon socket to connect to
+  -l, --log-level string   Set the logging level ("debug", "info", "warn", "error", "fatal") (default "info")
+      --tls                Use TLS; implied by --tlsverify
+      --tlscacert string   Trust certs signed only by this CA (default "/home/rio/.docker/ca.pem")
+      --tlscert string     Path to TLS certificate file (default "/home/rio/.docker/cert.pem")
+      --tlskey string      Path to TLS key file (default "/home/rio/.docker/key.pem")
+      --tlsverify          Use TLS and verify the remote
+  -v, --version            Print version information and quit
+
+Run 'docker COMMAND --help' for more information on a command.
+
+For more help on how to use Docker, head to https://docs.docker.com/go/guides/
+
+[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ docker -s[Kps
+[?2004lunknown shorthand flag: 'p' in -ps
+See 'docker --help'.
+
+Usage:  docker [OPTIONS] COMMAND
+
+A self-sufficient runtime for containers
+
+Common Commands:
+  run         Create and run a new container from an image
+  exec        Execute a command in a running container
+  ps          List containers
+  build       Build an image from a Dockerfile
+  pull        Download an image from a registry
+  push        Upload an image to a registry
+  images      List images
+  login       Log in to a registry
+  logout      Log out from a registry
+  search      Search Docker Hub for images
+  version     Show the Docker version information
+  info        Display system-wide information
+
+Management Commands:
+  builder     Manage builds
+  buildx*     Docker Buildx (Docker Inc., v0.10.5)
+  compose*    Docker Compose (Docker Inc., v2.18.1)
+  container   Manage containers
+  context     Manage contexts
+  image       Manage images
+  manifest    Manage Docker image manifests and manifest lists
+  network     Manage networks
+  plugin      Manage plugins
+  system      Manage Docker
+  trust       Manage trust on Docker images
+  volume      Manage volumes
+
+Swarm Commands:
+  swarm       Manage Swarm
+
+Commands:
+  attach      Attach local standard input, output, and error streams to a running container
+  commit      Create a new image from a container's changes
+  cp          Copy files/folders between a container and the local filesystem
+  create      Create a new container
+  diff        Inspect changes to files or directories on a container's filesystem
+  events      Get real time events from the server
+  export      Export a container's filesystem as a tar archive
+  history     Show the history of an image
+  import      Import the contents from a tarball to create a filesystem image
+  inspect     Return low-level information on Docker objects
+  kill        Kill one or more running containers
+  load        Load an image from a tar archive or STDIN
+  logs        Fetch the logs of a container
+  pause       Pause all processes within one or more containers
+  port        List port mappings or a specific mapping for the container
+  rename      Rename a container
+  restart     Restart one or more containers
+  rm          Remove one or more containers
+  rmi         Remove one or more images
+  save        Save one or more images to a tar archive (streamed to STDOUT by default)
+  start       Start one or more stopped containers
+  stats       Display a live stream of container(s) resource usage statistics
+  stop        Stop one or more running containers
+  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
+  top         Display the running processes of a container
+  unpause     Unpause all processes within one or more containers
+  update      Update configuration of one or more containers
+  wait        Block until one or more containers stop, then print their exit codes
+
+Global Options:
+      --config string      Location of client config files (default "/home/rio/.docker")
+  -c, --context string     Name of the context to use to connect to the daemon (overrides DOCKER_HOST env var and default context set with "docker
+                           context use")
+  -D, --debug              Enable debug mode
+  -H, --host list          Daemon socket to connect to
+  -l, --log-level string   Set the logging level ("debug", "info", "warn", "error", "fatal") (default "info")
+      --tls                Use TLS; implied by --tlsverify
+      --tlscacert string   Trust certs signed only by this CA (default "/home/rio/.docker/ca.pem")
+      --tlscert string     Path to TLS certificate file (default "/home/rio/.docker/cert.pem")
+      --tlskey string      Path to TLS key file (default "/home/rio/.docker/key.pem")
+      --tlsverify          Use TLS and verify the remote
+  -v, --version            Print version information and quit
+
+Run 'docker COMMAND --help' for more information on a command.
+
+For more help on how to use Docker, head to https://docs.docker.com/go/guides/
+
+[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ docker ps
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ docker ps -a
+[?2004lCONTAINER ID   IMAGE     COMMAND                   CREATED          STATUS                      PORTS     NAMES
+3ee978bb0571   mysql     "docker-entrypoint.s…"   38 seconds ago   Exited (1) 37 seconds ago             mysql000ex7
+[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ docker ps -a[K-ps[1Psrun --name mysql000ex7 -dit -e MYSQL_ROOT_PASSOWRD=myrootpass mysql
+[?2004ldocker: Error response from daemon: Conflict. The container name "/mysql000ex7" is already in use by container "3ee978bb05716fa07660dffb0f194e50d8c86b5f382de5d16751baa54c65a760". You have to remove (or rename) that container to be able to reuse that name.
+See 'docker run --help'.
+[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ docker run --name mysql000ex7 -dit -e MYSQL_ROOT_PASSOWRD=myrootpass mysql[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cps -a[K
+[?2004lCONTAINER ID   IMAGE     COMMAND                   CREATED          STATUS                      PORTS     NAMES
+3ee978bb0571   mysql     "docker-entrypoint.s…"   56 seconds ago   Exited (1) 55 seconds ago             mysql000ex7
+[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ docker rm mysql000ex7 
+[?2004lmysql000ex7
+[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ docker rm mysql000ex7 [10Pps -a
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ docker ps -arm mysql000ex7 [10Pps -arun --name mysql000ex7 -dit -e MYSQL_ROOT_PASSOWRD=myrootpass mysql
+[?2004lc44f76bd6a696ce6ae5d8fae746e0ee32074ce5ba101213b3eacfee3b36fe4aa
+[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ docker run --name mysql000ex7 -dit -e MYSQL_ROOT_PASSOWRD=myrootpass mysql[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cps -a[K
+[?2004lCONTAINER ID   IMAGE     COMMAND                   CREATED         STATUS                     PORTS     NAMES
+c44f76bd6a69   mysql     "docker-entrypoint.s…"   3 seconds ago   Exited (1) 2 seconds ago             mysql000ex7
+[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ docker ps -arun --name mysql000ex7 -dit -e MYSQL_ROOT_PASSOWRD=myrootpass mysql[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cps -a[K
+[?2004lCONTAINER ID   IMAGE     COMMAND                   CREATED          STATUS                      PORTS     NAMES
+c44f76bd6a69   mysql     "docker-entrypoint.s…"   23 seconds ago   Exited (1) 21 seconds ago             mysql000ex7
+[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ docker ps -arun --name mysql000ex7 -dit -e MYSQL_ROOT_PASSOWRD=myrootpass mysql[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cps -a[Krm mysql000ex7 
+[?2004lmysql000ex7
+[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ docker rm mysql000ex7 [10Pps -arun --name mysql000ex7 -dit -e MYSQL_ROOT_PASSOWRD=myrootpass mysql[1@O
+[?2004lc332b141f6a66c2feedca7c06170a2cea1bfc56c2bb777b1a864e63aa515e352
+[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ docker run --name mysql000ex7 -dit -e MYSQL_ROOT_PASSOWORD=myrootpass mysql[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cm mysql000ex7 [K[10Pps -a
+[?2004lCONTAINER ID   IMAGE     COMMAND                   CREATED         STATUS                     PORTS     NAMES
+c332b141f6a6   mysql     "docker-entrypoint.s…"   4 seconds ago   Exited (1) 3 seconds ago             mysql000ex7
+[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ docker ps -arun --name mysql000ex7 -dit -e MYSQL_ROOT_PASSOWORD=myrootpass mysql[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cm mysql000ex7 [K
+[?2004lmysql000ex7
+[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ docker rm mysql000ex7 [10Pps -arun --name mysql000ex7 -dit -e MYSQL_ROOT_PASSOWORD=myrootpass mysql[1P
+[?2004l0bcc168f542d8aafd9092c325a49ec17ef38f83dfa28c025c2e727df38a817e9
+[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ docker run --name mysql000ex7 -dit -e MYSQL_ROOT_PASSWORD=myrootpass mysql[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cm mysql000ex7 [K[10Pps -a
+[?2004lCONTAINER ID   IMAGE     COMMAND                   CREATED         STATUS         PORTS                 NAMES
+0bcc168f542d   mysql     "docker-entrypoint.s…"   3 seconds ago   Up 2 seconds   3306/tcp, 33060/tcp   mysql000ex7
+[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ docker stop mysql000ex7 
+[?2004lmysql000ex7
+[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ docker stop mysql000ex7 ps -a[K
+[?2004lCONTAINER ID   IMAGE     COMMAND                   CREATED              STATUS                     PORTS     NAMES
+0bcc168f542d   mysql     "docker-entrypoint.s…"   About a minute ago   Exited (0) 2 seconds ago             mysql000ex7
+[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ docker rm mysql000ex7 
+[?2004lmysql000ex7
+[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ docker rm mysql000ex7 [10Pps -a
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ 
+[?2004l[?2004h]0;rio@ThinkPadP14s: ~/work/git/docker_example[01;32mrio@ThinkPadP14s[00m:[01;34m~/work/git/docker_example[00m$ exit
+[?2004lexit
+
+Script done on 2023-06-05 16:03:05+09:00 [COMMAND_EXIT_CODE="0"]
