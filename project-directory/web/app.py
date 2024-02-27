@@ -18,3 +18,11 @@ def add_data():
     )
     cursor = conn.cursor()
     cursor.execute("INSERT INTO data (name) VALUES (%s)", (data[{name}],))
+    conn.commit()
+    cursor.close()
+    conn.close()
+    return jsonify(status="success")
+
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=8000)

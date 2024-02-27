@@ -1,0 +1,13 @@
+services:
+  db:                                 # コンテナの名前
+    image: mariadb:10.7
+    environment:                      # 環境変数の設定
+      MARIADB_ROOT_PASSWORD: rootpass # ルートのパスワード
+      MARIADB_DATABASE: testdb        # データベース名
+      MARIADB_USER: testuser          # データベースのユーザー名
+      MARIADB_PASSWORD: testpass      # データベースのパスワード
+    volumes:
+      - db-data:/var/lib/mysql
+volumes:
+  db-data:                            # データベースが持つデータを永続化する設定
+

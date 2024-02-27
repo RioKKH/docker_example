@@ -1,5 +1,11 @@
-services:
+services: # composeにおいてservicesはcontainerの事と考えてよい
   web:
     image: httpd:2.4
     ports:
       - "8080:80"
+
+networks: # ネットワーク
+  netweb01:
+
+volumes: # ボリューム
+  volweb01:
