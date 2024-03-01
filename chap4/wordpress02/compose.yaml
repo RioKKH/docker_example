@@ -1,1 +1,8 @@
 services:
+  db:
+    image: mariadb:10.7
+    enenvironment:
+      MARIADB_ROOT_PASSWORD: rootpass
+      MARIADB_DATABASE: wordpress
+      MARIADB_USER: wordpress
+      MARIADB_PASSWORD: wordpress
