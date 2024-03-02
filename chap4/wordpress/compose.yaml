@@ -1,31 +1,40 @@
 services:
-  db:
-    image: mariadb:11.2
+  db: # MariaDBのコンテナ
+    #image: mysql:5.7
+    image: mariadb:10.7
     volumes:
       - db-data:/var/lib/mysql
-        #restart: always
+    restart: always
     environment:
       MARIADB_ROOT_PASSWORD: rootpass
       MARIADB_DATABASE: wordpress
       MARIADB_USER: wordpress
       MARIADB_PASSWORD: wordpress
+      #MYSQL_ROOT_PASSWORD: rootpass
+      #MYSQL_DATABASE: wordpress
+      #MYSQL_USER: wordpress
+      #MYSQL_PASSWORD: wordpress
 
   wordpress: # WorldPressのコンテナ
+    #image: wordpress:latest # OK
+    #image: wordpress:6.0 # これだと動作しない
     image: wordpress # これも恐らくLatest相当なのだろう
     volumes:
-      - ./html:/var/www/html
-        #restart: always
+      - wordpress-data:/var/www/html
+    restart: always
     depends_on:
       - db
     ports:
       - "8080:80" 
     environment:
-      WORDPRESS_DB_HOST: db            # MariaDBのコンテナ名
+      WORDPRESS_DB_HOST: db:3306       # MariaDBのコンテナ名
       WORDPRESS_DB_NAME: wordpress     # MariaDBのデータベース名
       WORDPRESS_DB_USER: wordpress     # MariaDBのユーザー名
       WORDPRESS_DB_PASSWORD: wordpress # MariaDBのパスワード
 
 volumes:
+  # どちらもボリュームマウント
   db-data:
+  wordpress-data:
 
 
