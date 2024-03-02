@@ -1,0 +1,17 @@
+services:
+  web:
+    build: .
+      # buildにカレントディレクトリをあらわす . を書くと
+      # カレントフォルダーにあるDockerfileを使ってイメージが作成される
+    environment:
+      FLASK_ENV: development
+        # Flaskでプログラムの即時反映をするには、環境変数FLASK_ENVを
+        # developmentにしておく必要がある
+    ports:
+      - "5000:5000"
+    volumes:
+      # プログラムの変更がしやすいように
+      # ホスト: src/
+      # コンテナ：/usr/src/app
+      # をバインドマウントの設定にする
+      - ./src:/usr/src/app

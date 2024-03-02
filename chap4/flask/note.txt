@@ -1,0 +1,17 @@
+# 再ビルド
+docker compose up -d コマンドは、イメージが既にある場合には、
+イメージのビルドをし直すことなくコンテナを起動するため、
+イメージのビルドをし直したい場合には、--build オプションを付けて
+実行する必要があります。
+$ docker compose build
+$ docker compose up -d
+
+# イメージのビルドとコンテナの起動を同時に行う場合
+$ docker compose up -d --build
+
+# 環境のクリーンアップ
+キャッシュを無視してビルドする場合には、--no-cache オプションを付けて
+実行する必要があります。
+$ docker compose build --no-cache
+
+
