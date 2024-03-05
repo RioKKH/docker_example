@@ -1,0 +1,12 @@
+services:
+  ssh_services:
+    build: .
+    ports:
+      - "2222:22"
+    volumes:
+      - ./data:/home/autoauto/data
+      - "/tmp/.X11-unix:/tmp/.X11-unix"
+    environment:
+      - "DISPLAY"
+
+

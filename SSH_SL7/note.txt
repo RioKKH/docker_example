@@ -1,0 +1,2 @@
+docker compose up --build -d
+ssh autoauto@localhost -p 2222
