@@ -1,0 +1,30 @@
+FROM ubuntu:22.04
+
+# kcovのビルドに必要なパッケージをインストール
+RUN apt-get update && apt-get install -y \
+    cmake \
+    g++ \
+    git \
+    libcurl4-openssl-dev \
+    libdw-dev \
+    libelf-dev \
+    libiberty-dev \
+    libssl-dev \
+    libtool \
+    libbfd-dev \
+    binutils-dev \
+    make \
+    pkg-config \
+    python3 \
+    wget \
+    zlib1g-dev \
+    curl
+
+# kcovのビルド
+RUN git clone https://github.com/SimonKagstrom/kcov.git \
+    && cd kcov \
+    && mkdir build \
+    && cd build \
+    && cmake .. \
+    && make \
+    && make install

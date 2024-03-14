@@ -1,0 +1,7 @@
+services:
+  scientificlinux-kcov:
+    build: .
+    volumes:
+      - ./test:/app/test
+      - ./coverage:/app/coverage
+    command: tail -f /dev/null

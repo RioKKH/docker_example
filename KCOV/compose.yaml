@@ -1,0 +1,17 @@
+services:
+  scientificlinux:
+    build:
+      context: .
+      dockerfile: Dockerfile.scientificlinux
+    volumes:
+      - ./test:/test
+
+  kcov:
+    build:
+      context: .
+      dockerfile: Dockerfile.kcov
+    volumes:
+      - ./test:/test
+      - ./coverage:/coverage
+    command: tail -f /dev/null
+
