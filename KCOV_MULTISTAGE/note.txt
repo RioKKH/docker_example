@@ -1,0 +1,4 @@
+$ docker compose build
+$ docker compose up -d
+$ docker compose exec scientificlinux-kcov kcov /app/coverage /app/test/your_test_script.sh
+
